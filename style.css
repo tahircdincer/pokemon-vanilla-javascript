@@ -14,10 +14,36 @@ nav {
   justify-content: center;
   align-items: center;
 }
-h1 {
-  font-family: "Roboto", serif;
-}
 
 body {
   background-color: blanchedalmond;
+  font-family: "Roboto", serif;
+}
+
+.pokemon__card {
+  margin-top: 0.5rem;
+  width: 15rem;
+  height: 20rem;
+  border: 3px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.pokemon__card > img {
+  width: 10rem;
+}
+.pokemon__card > h2 {
+  position: absolute;
+  top: 10px;
+}
+
+.pokemon__container {
+  display: grid;
+  justify-self: center;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
 }
